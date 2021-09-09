@@ -83,7 +83,7 @@ header .head__content .best__blog img {
   height: 450px;
   object-fit: cover;
   margin-top: 4rem;
-  box-shadow: 0px 15px 10px -10px rgb(0 0 0 / 50%)
+  box-shadow: 0px 15px 10px -10px rgb(0 0 0 / 50%);
 }
 
 header .head__content .best__blog span {
@@ -139,61 +139,99 @@ header .head__content .best__blog:hover button {
   margin-top: 17rem;
 }
 
-.more__blog__section .title{
+.more__blog__section .title {
   text-align: center;
 }
 
-.more__blog__section .title span{
+.more__blog__section .title span {
   font-size: 2.5rem;
 }
 
-.more__blog__section .title p{
+.more__blog__section .title p {
   margin-top: 0;
   margin-bottom: 5rem;
   font-size: 1.2rem;
 }
 
-.more__blog__section .blogs .container{
+.more__blog__section .blogs .container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.more__blog__section .blogs .blogs__content{
+.more__blog__section .blogs .blogs__content {
   flex: 0 0 33%;
   /* max-width: 40%; */
 }
 
-.more__blog__section .blogs .blogs__content i{
+.more__blog__section .blogs .blogs__content i {
   font-size: 1.7rem;
-  margin-right: .7rem;
+  margin-right: 0.7rem;
   vertical-align: middle;
 }
 
-.more__blog__section .blogs .blogs__content span{
+.more__blog__section .blogs .blogs__content span {
   font-size: 1.5rem;
   font-weight: 300;
   vertical-align: middle;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-.more__blog__section .blogs .blogs__content a{
+.more__blog__section .blogs .blogs__content a {
   text-decoration: none;
-  transition: all .3s ease-out;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-out;
 }
 
-.more__blog__section .blogs .blogs__content a::after{
+.more__blog__section .blogs .blogs__content a::after {
   content: " >>";
   font-weight: bold;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .more__blog__section .blogs .blogs__content:hover span,
 .more__blog__section .blogs .blogs__content:hover a {
-  color: #FD8866;
+  color: #fd8866;
 }
 
-.more__blog__section .blogs .blogs__content:hover a::after{
+.more__blog__section .blogs .blogs__content:hover a::after {
   color: #000;
   padding-left: 3px;
+}
+
+/* --------------------------------------
+            SUBSCRIBE SECTION
+-----------------------------------------*/
+.subscribe__section {
+  margin-top: 6rem;
+  background: linear-gradient(90deg, #fd8866, #fa543a);
+  height: 10rem;
+}
+
+.subscribe__section .subscribe__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.subscribe__section .subscribe__content p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.subscribe__section .subscribe__content button {
+  background: #FD8866;
+  padding: 10px 60px;
+  border: 1px solid #FD8866;
+  outline: 0;
+  cursor: pointer;
+  transition: all .3s;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.subscribe__section .subscribe__content button:hover {
+  border: 1px solid #fff;
+  background: transparent;
 }
