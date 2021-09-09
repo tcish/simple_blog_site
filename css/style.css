@@ -135,3 +135,65 @@ header .head__content .best__blog:hover button {
 /* --------------------------------------
             MORE BLOG SECTION
 -----------------------------------------*/
+.more__blog__section {
+  margin-top: 17rem;
+}
+
+.more__blog__section .title{
+  text-align: center;
+}
+
+.more__blog__section .title span{
+  font-size: 2.5rem;
+}
+
+.more__blog__section .title p{
+  margin-top: 0;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+}
+
+.more__blog__section .blogs .container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.more__blog__section .blogs .blogs__content{
+  flex: 0 0 33%;
+  /* max-width: 40%; */
+}
+
+.more__blog__section .blogs .blogs__content i{
+  font-size: 1.7rem;
+  margin-right: .7rem;
+  vertical-align: middle;
+}
+
+.more__blog__section .blogs .blogs__content span{
+  font-size: 1.5rem;
+  font-weight: 300;
+  vertical-align: middle;
+  transition: all .3s ease-out;
+}
+
+.more__blog__section .blogs .blogs__content a{
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+.more__blog__section .blogs .blogs__content a::after{
+  content: " >>";
+  font-weight: bold;
+  transition: all .3s;
+}
+
+.more__blog__section .blogs .blogs__content:hover span,
+.more__blog__section .blogs .blogs__content:hover a {
+  color: #FD8866;
+}
+
+.more__blog__section .blogs .blogs__content:hover a::after{
+  color: #000;
+  padding-left: 3px;
+}
