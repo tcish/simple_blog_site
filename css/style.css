@@ -164,12 +164,7 @@ header .head__content .best__blog:hover button {
 .more__blog__section .blogs .container {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.more__blog__section .blogs .blogs__content {
-  flex: 0 0 33%;
-  /* max-width: 40%; */
+  justify-content: center;
 }
 
 .more__blog__section .blogs .blogs__content i {
@@ -261,6 +256,7 @@ header .head__content .best__blog:hover button {
 
 .latest_blog_section .latest_blog_content{
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
