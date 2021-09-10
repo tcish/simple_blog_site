@@ -4,9 +4,26 @@ body {
   box-sizing: border-box;
 }
 
+/* --------------------------------------
+            COMMON
+-----------------------------------------*/
 .container {
   max-width: 1140px;
   margin: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.title span {
+  font-size: 2.5rem;
+}
+
+.title p {
+  margin-top: 0;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
 }
 
 /* --------------------------------------
@@ -136,21 +153,7 @@ header .head__content .best__blog:hover button {
             MORE BLOG SECTION
 -----------------------------------------*/
 .more__blog__section {
-  margin-top: 17rem;
-}
-
-.more__blog__section .title {
-  text-align: center;
-}
-
-.more__blog__section .title span {
-  font-size: 2.5rem;
-}
-
-.more__blog__section .title p {
-  margin-top: 0;
-  margin-bottom: 5rem;
-  font-size: 1.2rem;
+  margin-top: 13.5rem;
 }
 
 .more__blog__section .blogs .container {
@@ -187,6 +190,7 @@ header .head__content .best__blog:hover button {
   content: " >>";
   font-weight: bold;
   transition: all 0.3s;
+  vertical-align: middle;
 }
 
 .more__blog__section .blogs .blogs__content:hover span,
@@ -205,13 +209,12 @@ header .head__content .best__blog:hover button {
 .subscribe__section {
   margin-top: 6rem;
   background: linear-gradient(90deg, #fd8866, #fa543a);
-  height: 10rem;
 }
 
 .subscribe__section .subscribe__content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 50px 0;
 }
 
@@ -221,12 +224,12 @@ header .head__content .best__blog:hover button {
 }
 
 .subscribe__section .subscribe__content button {
-  background: #FD8866;
+  background: #fd8866;
   padding: 10px 60px;
-  border: 1px solid #FD8866;
+  border: 1px solid #fd8866;
   outline: 0;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
   color: #fff;
   font-size: 1.2rem;
 }
@@ -234,4 +237,99 @@ header .head__content .best__blog:hover button {
 .subscribe__section .subscribe__content button:hover {
   border: 1px solid #fff;
   background: transparent;
+}
+
+/* --------------------------------------
+            LATEST BLOG SECTION
+-----------------------------------------*/
+.latest_blog_section .title{
+  margin-top: 4rem;
+}
+
+.latest_blog_section .title p{
+  margin-bottom: 2rem;
+}
+
+.latest_blog_section{
+  margin-bottom: 4rem;
+}
+
+.latest_blog_section .latest_blog_content{
+  display: flex;
+  align-items: center;
+}
+
+.latest_blog_section .latest_blog_content .latest_blog_item{
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
+  text-align: center;
+  padding: 2rem;
+  margin: 1.5rem;
+  transition: all .5s;
+}
+
+.latest_blog_section .latest_blog_content .latest_blog_item i{
+  color: #fa543a;
+  font-size: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  margin-bottom: 1.3;
+  transition: all .5s;
+}
+
+.latest_blog_section .latest_blog_content .latest_blog_item h3{
+  font-size: 1.5rem;
+}
+
+.latest_blog_section .latest_blog_content .latest_blog_item p{
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.latest_blog_section .latest_blog_content .latest_blog_item button{
+  background: #fd8866;
+  padding: 10px 20px;
+  border: 1px solid #fd8866;
+  outline: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.latest_blog_section .latest_blog_content .latest_blog_item button:hover{
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+.latest_blog_section .latest_blog_content .latest_blog_item:hover{
+  background: #000;
+}
+
+.latest_blog_section .latest_blog_content .latest_blog_item:hover h3,
+.latest_blog_section .latest_blog_content .latest_blog_item:hover p{
+  color: #fff;
+}
+
+.latest_blog_section .latest_blog_content .latest_blog_item:hover i{
+  background: #fa543a;
+  color: #fff;
+}
+
+/* --------------------------------------
+            FOOTER SECTION
+-----------------------------------------*/
+footer{
+  padding: 1.7rem 7rem;
+  background: #000;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer span{
+  color: #fff;
+  font-size: 1.1rem;
 }
